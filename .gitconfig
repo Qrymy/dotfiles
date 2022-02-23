@@ -1,0 +1,30 @@
+[user]
+    name = Qrymy
+    email = regist@qry.mx
+
+[core]
+    ignorecase = false
+    quotepath = false
+    safecrlf = true
+        autocrlf = input
+
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
+
+[pull]
+    rebase = false
+
+[alias]
+    b = branch
+    c = commit
+    cm = commit -m
+    f = fetch
+    s = status
+    st = stash
+    cp = cherry-pick
+    rh = reset --hard
+    cb = switch -c
+    current-branch = rev-parse --abbrev-ref HEAD
+    ps = !git push origin `git current-branch`
+    pl = !git pull origin `git current-branch`
+    db = !git switch main | git branch | grep -v "main" | xargs git branch -D

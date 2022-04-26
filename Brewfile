@@ -9,6 +9,7 @@ brew "jq"
 brew "yarn"
 brew "zsh-completions"
 brew "mysql"
+brew "direnv"
 
 cask "ngrok"
 cask "google-chrome"

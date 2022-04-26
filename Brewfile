@@ -8,6 +8,7 @@ brew "git"
 brew "jq"
 brew "yarn"
 brew "zsh-completions"
+brew "mysql"
 
 cask "ngrok"
 cask "google-chrome"
